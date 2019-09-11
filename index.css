@@ -1,0 +1,258 @@
+html{
+    scroll-behavior: smooth;
+}
+a, a:active, a:visited, a:hover{
+    text-decoration: none;
+    color: white;
+}
+body{
+    margin: auto;
+    background-image: linear-gradient(to bottom,#cdcdd2,white);
+    min-width: 900px;
+    max-width: 900px;
+    height: 100%;
+    font-family: 'Varela Round', sans-serif;
+}
+.sectiontitle{
+    border-bottom: 5px solid #083d58;
+    text-align: center;
+    background: #239db8;
+    margin: 0;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.minititle{
+    margin: 20px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+/*------------------------------------------------ header --------------------------------------------------*/
+header{
+    height: 111px;
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+    font-family: Impact, Charcoal, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-decoration: underline;
+}
+header img{
+    height: 100px;
+    margin: 5px 5% 0 5%;
+}
+/*------------------------------------------------ navigation --------------------------------------------------*/
+nav{
+    background-color: #083d58;
+    height: 45px;
+}
+nav table{
+    margin: auto;
+}
+nav th{
+    
+    height: 40px;
+    padding: 0 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: padding 1.5s , background-color 0.5s ;
+}
+nav th:hover{
+    background-color: #239db8;
+    padding: 0 35px;
+    transition: padding 1.5s , background-color 0.5s ;
+}
+/*------------------------------------------------ sildes show --------------------------------------------------*/
+#slidesshow{
+    position: relative;
+    background-color: #b6b6b6;
+    height: 300px;
+    width: 100%;
+    margin: 8px 0;
+    
+}
+.img12{
+    margin: 90px 0;
+    width: 93px;
+    height: 90px;
+}
+.himg:hover{
+    opacity: 0.9;
+    transition: opacity 0.5s;
+}
+
+.nextimg{
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    background-color: #083d58;
+    opacity: 0.5;
+}
+.previousimg{
+    position: absolute;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background-color: #083d58;
+    opacity: 0.5;
+}
+.nextimg:active .img0{
+    width: 50%;
+}
+.img0{
+    position: absolute;
+}
+.img1{
+    position: absolute;
+    width: 0;
+}
+.img-1{
+    position: absolute;
+    width: 0;
+}
+
+/*------------------------------------------------ Accueil --------------------------------------------------*/
+#accueil{
+    background-color: rgb(231, 231, 231);
+    border: 2px solid #083d58;
+}
+#accueil p{
+    font-size: 15px;
+    margin: 10px;
+}
+#accueil li{
+    font-size: 16px;
+}
+#accueil a{
+    color: black;
+    margin: 20px 30px;
+}
+#accueil a:hover{
+    color: #448de7;
+    border-bottom: 2px solid #448de7;
+}
+/*------------------------------------------------ Departements --------------------------------------------------*/
+#departements{
+    background-color: rgb(231, 231, 231);
+    border: 2px solid #083d58;
+    border-top: none;
+}
+.depintro{
+    font-size: 15px;
+    margin: 10px;
+}
+.alldep{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.deptit{
+    margin: 170px 0;
+    color: white;
+    font-size: 50px;
+    text-shadow: 3px 3px 3px black;
+    width: 100%;
+    overflow: hidden;
+    transition: opacity 1s;
+}
+.dep:hover .deptit{
+    opacity: 0;
+    transition: opacity 1s;
+}
+.dep{
+    height: 400px;
+    width: 400px;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid #083d58;
+}
+.deph{
+    position: absolute;
+    background-color: #398be98c;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    text-align: left;
+    overflow: hidden;
+    transition: width 0.5s;
+    white-space: nowrap;
+}
+.dep:hover .deph{
+    width: 100%;
+    height: 100%;
+    transition: width 0.5s;
+}
+.dep1{
+    background-image: url("img/departements/GMP\ et\ MI.png");
+    position: relative;
+}
+.dep2{
+    background-image: url("img/departements/GE\ et\ INFO.png");
+    position: relative;
+}
+.dep3{
+    background-image: url("img/departements/GP.png");
+    position: relative;
+}
+.dep4{
+    background-image: url("img/departements/STG.png");
+    position: relative;
+}
+.deph p{
+    font-size: 15px;
+    color: rgb(229, 231, 231);
+    font-family: 'Oswald', sans-serif;
+    margin-left: 10px;
+}
+.dept{
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Oswald', sans-serif;
+}
+.deph span{
+    color: rgb(204, 200, 200);
+    text-shadow: 0.5px 0.5px 0.5px black;
+}
+.depf{
+    text-align: center;
+    font-size: 16px;
+}
+.deph a{
+    text-decoration: underline;
+    
+}
+.deph a:hover{
+    color: #e7910f;
+}
+/*------------------------------------------------ L'emplacement --------------------------------------------------*/
+#emplacement{
+    background-color: rgb(231, 231, 231);
+    border: 2px solid #083d58;
+    border-top: none;
+}
+.mapouter{
+    border-left: 2px solid #083d58;
+    border-right: 2px solid #083d58;
+    margin: auto;
+}
+/*------------------------------------------------ Contact --------------------------------------------------*/
+#contact{
+    background-color: rgb(231, 231, 231);
+    border: 2px solid #083d58;
+    border-top: none;
+    margin-bottom: 100px;
+}
+.contactinfo{
+    margin: 45px;
+}
+.contactinfo span{
+    font-size: 25px;
+    margin: 20px;
+}
